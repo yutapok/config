@@ -11,3 +11,6 @@ done
 wait
 
 echo 'alias cmds="cat ${HOME}/shared/cmds/index"' >> ~/.bash_profile
+
+
+cp vimrc  ~/.vimrc
