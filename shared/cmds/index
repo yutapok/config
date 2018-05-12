@@ -1,0 +1,52 @@
+[mysql]
+base: mysql -u root -p
+>mysql 
+create user identified by [PASSWORD..];
+show databases;
+show tables;
+use [DATABASE..]
+
+[centos7 firewall]
+firewall-cmd --list-all
+firewall-cmd --reload
+firewall-cmd --add-port=@@@@/tcp --zone=public --permanent
+
+[maven]
+mvn clean
+mvn install
+mvn install:install-file -DgroupId= -DartifactId= -Dpackaging= -Dversion=
+mvn compile
+mvn compile war:war
+mvn package -Dmaven.test.skip
+
+[scp]
+#SERVER => LOCAL
+scp -i <sshkey> <user_name>@<host or ip>:<server_file_location> <local_file_location>
+scp -r -i <sshkey> <user_name>@<host or ip>:<server_dir_location> <local_dir_location>
+
+#LOCAL => SERVER
+scp -i <sshkey> <local_file_location> <user_name>@<host or ip>:<server_file_location>
+scp -r -i <sshkey> <local_dir_location> <user_name>@<host or ip>:<server_dir_location>
+
+
+[sbt]
+sbt new sbt/scala-seed.g8
+sbt
+sbt package
+
+[valgrind]
+valgrind [--leak-check=full] <program>
+
+[ldd]
+ldconfig
+ldd <file_path>
+echo "/usr/local/lib" >> /etc/ld.so.conf.d/<FILE_NAME>.conf  "/usr/local/lib" has shared_object(.so)
+
+[gcc]
+gcc -Wall -I -L -o 
+
+[redis]
+dbsize
+memory size
+memory usage
+
