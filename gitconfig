@@ -1,0 +1,2 @@
+[alias]
+    logg = log --graph --oneline --decorate=full -20 --date=short
